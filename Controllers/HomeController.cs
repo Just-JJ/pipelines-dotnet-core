@@ -10,8 +10,10 @@ namespace pipelines_dotnet_core.Controllers
 {
     public class HomeController : Controller
     {
+        private string msg = "";
         public IActionResult Index()
         {
+            msg = "This is the default page";
             return View();
         }
 
